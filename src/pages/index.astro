@@ -1,6 +1,4 @@
 ---
-Astro.response.headers.set('content-encoding', 'none');
-
 async function * stream(cb) {
 	for await(const num of Array.from({length: 10}, (v, n) => n)) {
 		await new Promise(resolve => {
