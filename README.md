@@ -11,3 +11,7 @@ flyctl launch
 ```
 
 Walk through the guide and congrats!
+
+## Fastify routes
+
+You can use `api/index.js` to define any Fastify routes or plugins. This is a useful way to extend your server with Fastify's ecosystem of add-ons.
