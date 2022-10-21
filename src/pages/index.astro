@@ -1,13 +1,5 @@
 ---
-async function * stream(cb: (num: number) => any) {
-	for await(const num of Array.from({length: 10}, (v, n) => n)) {
-		await new Promise(resolve => {
-			setTimeout(resolve, 1000);
-		});
-		yield cb(num);
-		yield '\n';
-	}
-}
+import { streamNumbers } from '../stream';
 ---
 
 <html lang="en">
@@ -22,7 +14,7 @@ async function * stream(cb: (num: number) => any) {
 		<h1>Astro</h1>
 		
 		<ul>
-			{stream(num => (
+			{streamNumbers(10, num => (
 				<li>{ num }</li>
 			))}
 		</ul>
