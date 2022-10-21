@@ -1,7 +1,6 @@
+import type { DefineFastifyRoutes } from '@matthewp/astro-fastify';
 
-
-/** @type {import('@matthewp/astro-fastify').DefineFastifyRoutes} */
-const defineRoutes = (fastify) => {
+const defineRoutes: DefineFastifyRoutes = (fastify) => {
   // Here you have the fastify object and can do whatever you need, such as
   // adding routes or plugins.
 

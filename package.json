@@ -11,7 +11,7 @@
     "astro": "astro"
   },
   "dependencies": {
-    "@matthewp/astro-fastify": "^1.4.0",
-    "astro": "^1.2.6"
+    "@matthewp/astro-fastify": "^2.0.1",
+    "astro": "^1.5.2"
   }
 }
