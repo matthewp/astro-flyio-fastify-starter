@@ -1,5 +1,5 @@
 ---
-async function * stream(cb) {
+async function * stream(cb: (num: number) => any) {
 	for await(const num of Array.from({length: 10}, (v, n) => n)) {
 		await new Promise(resolve => {
 			setTimeout(resolve, 1000);
